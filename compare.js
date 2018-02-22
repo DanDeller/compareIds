@@ -3,9 +3,8 @@ $(function() {
   // GET SLIDER LIST PRICES
   //
   var productHold = [],
-      items       = [];
-
-  var urls = []; // urls get stored in the array
+      items       = [],
+      urls = []; // urls get stored in the array
 
   $.when.apply($, urls.map(function(url) {
     return $.ajax(url);
