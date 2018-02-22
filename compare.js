@@ -5,14 +5,7 @@ $(function() {
   var productHold = [],
       items       = [];
 
-  var urls = [
-    '/vitapak-brand-store/mens-health-wellness/?format=ajax',
-    '/vitapak-brand-store/mens-engery-metabolism/?format=ajax',
-    '/vitapak-brand-store/mens-spots-performance/?format=ajax',
-    '/vitapak-brand-store/womens-health-wellness/?format=ajax',
-    '/vitapak-brand-store/womens-engery-metabolism/?format=ajax',
-    '/vitapak-brand-store/womens-spots-performance/?format=ajax'
-  ];
+  var urls = []; // urls get stored in the array
 
   $.when.apply($, urls.map(function(url) {
     return $.ajax(url);
