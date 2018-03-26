@@ -4,7 +4,7 @@ $(function() {
   //
   var productHold = [],
       items       = [],
-      urls = []; // urls get stored in the array
+      urls        = []; // urls get stored in the array
 
   $.when.apply($, urls.map(function(url) {
     return $.ajax(url);
